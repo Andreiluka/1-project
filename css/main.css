@@ -1,71 +1,323 @@
-@font-face {
-   font-family: 'Roboto';
-   src: url('../fonts/Roboto-Bold_1.ttf');
-   font-weight: bold;
-   font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700');
 
-@font-face {
-   font-family: 'Roboto';
-   src: url('../fonts/Roboto-LightItalic_1.ttf');
-   font-weight: normal;
-   font-style: italic;
-}
-
-@font-face {
-   font-family: 'Roboto';
-   src: url('../fonts/Roboto-Light_1.ttf');
-   font-weight: normal;
-   font-style: normal;
-}
+body {
+   margin: 0;
+   font-family: "Roboto", Arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
 
 ul {
    list-style: none;
+   margin: 0;
+   padding: 0;
 }
 
-.wrapper {
-   font-family: 'roboto', Arial, Helvetica, sans-serif;
-   width: 1100px;
-   margin: auto;
+img {
+   display: block;
+   max-width: 100%;
+   max-height: 100%;
+}
+
+.container {
+   width: 1058px;
+   margin: 0 auto;   
 }
 
 .header {
-   height: 36px;
-   padding: 20px 21px 20px 21px;
    background-color: #4b73b5;
+   color: #ffffff;
+   margin-bottom: 13px;   
 }
 
-.logo {
-   height: 100%;   
+.header .container {
+   position: relative;
+   height: 76px;
 }
 
-.contacts {
-   height: 100%;
-   float: right;
-   /* padding: 19px 21px 17px 0px; */
-   /* font-style: bold; */
-}
+.logo-header {
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   top: 20px;
+ }
+
+.contacts {   
+   position: absolute;
+   right: 0;
+   top: 20px;
+   text-align: right;
+ }
 
 .contacts__phone {
-   color: #ffffff;
-   text-decoration: none;   
-   /* font-weight: 800px; */
+   text-decoration: none;
+   font-size: 21px;
+   font-weight: bold;
+   color: inherit;
 }
 
 .contacts__graph {
-   margin-top: 4px;
-   text-align: right;
-   font-size: 12px;
-   text-decoration: underline;   
-   color: #ffffff;   
-}
-
-.sidebar {
-   list-style: none;
-   float: left;
-   width: 20%;
+   font-size: 14px;
+   font-weight: bold;
+   opacity: 0.7;
+   text-decoration: underline;     
 }
 
 .page {
-   width: 80%;
+   width: 901px;   
+}
+
+.page, .sidebar {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.sidebar {   
+   margin-top: 32px;
+   width: 153px;
+}
+
+.nav__item {
+   height: 18px;
+   margin-bottom: 30px;        
+}
+
+.nav__title {
+   /* display: inline-block; */
+   color: #4b73b5;
+   letter-spacing: 2.4px;
+   font-size: 12px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-decoration: none;
+   vertical-align: top;
+}
+
+.nav__icon-main:before {
+   content: url(/images/main_icon.png);
+   margin-right: 19px;
+}
+
+.nav__icon-feed:before {
+   content: url(/images/feed_icon.png);
+   margin-right: 16px;
+}
+
+.nav__icon-team:before {
+   content: url(/images/team_icon.png);
+   margin-right: 14px;
+}
+
+/* отображение черным ссылки при наведении */
+
+.nav__title:hover {
+   color: #221f1f;   
+}
+
+.nav__icon-main:hover:before {   
+   content: url(/images/main_icon_black.png)
+}
+
+.nav__icon-feed:hover:before {   
+   content: url(/images/feed_icon_black.png)
+}
+
+.nav__icon-team:hover:before {   
+   content: url(/images/team_icon_black.png)
+}
+
+
+/* отображение черным ссылки текущей страницы */
+
+.nav__active .nav__icon-main{
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-main:before{
+   content: url(/images/main_icon_black.png)
+}
+
+.nav__active .nav__icon-feed{
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-feed:before{
+   content: url(/images/feed_icon_black.png)
+}
+
+.nav__active .nav__icon-team{
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-team:before{
+   content: url(/images/team_icon_black.png)
+}
+
+
+/* Тарифы */
+
+h2 {
+   color: #221f1f;
+   font-size: 49px;
+   line-height: 38px;
+   margin-top: 16px;
+}
+
+.tariffs__item {
+   display: inline-block;
+}
+
+.tariffs__desc {
+   width: 250px;
+   height: 456px;  
+}
+
+.tariffs__desc-central {
+   border-radius: 5px;
+   border: 1px solid #e8e9ed;
+}
+
+.tariffs__icon {
+   background: center center no-repeat;
+   width: 72px;
+   height: 72px;
+   margin: 29px auto 21px;
+}
+
+.tariffs__icon-flower {   
+   background-image: url(/images/flower.png);
+}
+
+.tariffs__icon-star {
+   background-image: url(/images/star.png);
+}
+
+.tariffs__icon-palette {
+   background-image: url(/images/palette.png);
+}
+
+.tariffs__text {
+   margin: 0px auto 0px;
+   width: 188px;
+   height: 188px;
+   color: #221f1f;
+   font-size: 18px;
+   font-weight: 300;
+   line-height: 32px;
+}
+
+.tariffs__text li::before {
+   content: '\2022';   
+   font-size: 1.1em;
+   margin-right: 15px;
+}
+
+.tariffs__text p {
+   text-align: center;
+   margin: 0px;   
+}
+
+.tariffs__text h5 {
+   margin-bottom: 6px;
+   text-align: center;
+   font-size: 11px;
+   font-weight: bold; 
+   text-transform: uppercase;
+   letter-spacing: 2.88px;  
+}
+
+.tariffs__price {
+   text-align: center;   
+   font-weight: 400;   
+   color: #212121;
+}
+
+.tariffs__currency {
+   font-size: 34px;   
+}
+
+.tariffs__value {
+   font-size: 54px;
+   letter-spacing: -1.07px;
+   line-height: 134.58px;
+}
+
+
+/* Новости */
+
+.news__title {
+   margin-bottom: 72px;
+}
+
+.news__item {
+   margin-top: 31px;
+}
+
+.news__pic {   
+   overflow: hidden;
+   border-radius: 50%;
+   width: 160px;
+   height: 160px;
+   margin-right: 20px;
+}
+
+.news__desc {
+   width: 652px;
+}
+
+.news__item::after {
+   content: url(/images/line.png);   
+}
+
+.news__item:last-child::after {
+   display: none;   
+}
+
+.news__pic, .news__desc {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.news__data {
+   color: #656464;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 21px;
+}
+
+.news__name {
+   margin-top: 5px;
+   margin-bottom: 0px;
+   font-weight: 700;
+   line-height: 15px;
+}
+
+.news__text {
+   font-size: 18px;
+   font-weight: 300;
+   line-height: 28px;
+   margin-bottom: 0px;
+}
+
+/* Пагинация */
+
+.pagination {
+   width: 336px;
+   margin: 58px auto;
+
+}
+
+.pagination__display, 
+.pagination__controls,
+.pagination__prev, 
+.pagination__item, 
+.pagination__next {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+
+.footer {
+   background-color: #4b73b5;
+   color: #ffffff;
 }
