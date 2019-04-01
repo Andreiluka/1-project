@@ -2,6 +2,7 @@
 
 body {
    margin: 0;
+   padding: 0;
    font-family: "Roboto", Arial, sans-serif;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
@@ -302,22 +303,102 @@ h2 {
 /* Пагинация */
 
 .pagination {
-   width: 336px;
+   width: 355px;
    margin: 58px auto;
-
+   font-size: 14px;
+   line-height: 23px;
 }
 
 .pagination__display, 
 .pagination__controls,
-.pagination__prev, 
-.pagination__item, 
-.pagination__next {
+.pagination__prev,
+.pagination__next,
+.pagination__pages,
+.pagination__item {
    display: inline-block;
    vertical-align: middle;
 }
 
+.pagination__display {
+   color: #656464;
+   font-weight: 300;
+   margin-right: 10px;
+}
+
+.pagination__controls a {
+   text-decoration: none;
+   color: #221f1f;
+   font-weight: bold;
+}
+
+.pagination__prev, .pagination__item-block, .pagination__next {   
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   margin-left: -3px;
+}
+
+.pagination__item-active {   
+   background-color: #4b73b5;
+   border-radius: 15%;
+}
+
+.pagination__item-active a {
+   color: #ffffff;
+}
+
+
+/* Футер */
 
 .footer {
    background-color: #4b73b5;
    color: #ffffff;
+}
+
+.footer .container {
+   position: relative;
+   height: 76px;
+}
+
+.footer__author {
+   width: 236px;   
+   position: absolute;
+   left: 0;   
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 18px;
+}
+
+.foter__school {
+   font-weight: bold;
+   color: inherit;
+}
+
+.author {
+   font-weight: bold;
+}
+
+.logo-footer {
+   display: inline-block;
+   position: absolute;
+   left: 50%;
+   top: 20px;
+}
+
+.socials {   
+   position: absolute;
+   right: 0;
+   top: 20px;
+   text-align: left;
+}
+
+.socials__text {
+   margin:0px 0px 5px 0px;
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.socials__item {
+   display: inline-block;
+   margin-right: 6px;
 }
