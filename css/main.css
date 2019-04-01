@@ -83,8 +83,7 @@ img {
    margin-bottom: 30px;        
 }
 
-.nav__title {
-   /* display: inline-block; */
+.nav__title {   
    color: #4b73b5;
    letter-spacing: 2.4px;
    font-size: 12px;
@@ -95,17 +94,17 @@ img {
 }
 
 .nav__icon-main:before {
-   content: url(/images/main_icon.png);
+   content: url('../images/main_icon.png');
    margin-right: 19px;
 }
 
 .nav__icon-feed:before {
-   content: url(/images/feed_icon.png);
+   content: url('../images/feed_icon.png');
    margin-right: 16px;
 }
 
 .nav__icon-team:before {
-   content: url(/images/team_icon.png);
+   content: url('../images/team_icon.png');
    margin-right: 14px;
 }
 
@@ -116,15 +115,15 @@ img {
 }
 
 .nav__icon-main:hover:before {   
-   content: url(/images/main_icon_black.png)
+   content: url('../images/main_icon_black.png')
 }
 
 .nav__icon-feed:hover:before {   
-   content: url(/images/feed_icon_black.png)
+   content: url('../images/feed_icon_black.png')
 }
 
 .nav__icon-team:hover:before {   
-   content: url(/images/team_icon_black.png)
+   content: url('../images/team_icon_black.png')
 }
 
 
@@ -135,7 +134,7 @@ img {
 }
 
 .nav__active .nav__icon-main:before{
-   content: url(/images/main_icon_black.png)
+   content: url('../images/main_icon_black.png')
 }
 
 .nav__active .nav__icon-feed{
@@ -143,7 +142,7 @@ img {
 }
 
 .nav__active .nav__icon-feed:before{
-   content: url(/images/feed_icon_black.png)
+   content: url('../images/feed_icon_black.png')
 }
 
 .nav__active .nav__icon-team{
@@ -151,7 +150,7 @@ img {
 }
 
 .nav__active .nav__icon-team:before{
-   content: url(/images/team_icon_black.png)
+   content: url('../images/team_icon_black.png')
 }
 
 
@@ -186,15 +185,15 @@ h2 {
 }
 
 .tariffs__icon-flower {   
-   background-image: url(/images/flower.png);
+   background-image: url('../images/flower.png');
 }
 
 .tariffs__icon-star {
-   background-image: url(/images/star.png);
+   background-image: url('../images/star.png');
 }
 
 .tariffs__icon-palette {
-   background-image: url(/images/palette.png);
+   background-image: url('../images/palette.png');
 }
 
 .tariffs__text {
@@ -267,7 +266,7 @@ h2 {
 }
 
 .news__item::after {
-   content: url(/images/line.png);   
+   content: url('../images/line.png');   
 }
 
 .news__item:last-child::after {
