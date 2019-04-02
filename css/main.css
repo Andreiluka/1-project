@@ -36,7 +36,7 @@ img {
    height: 76px;
 }
 
-.logo-header {
+.logo {
    display: inline-block;
    position: absolute;
    left: 0;
@@ -47,7 +47,6 @@ img {
    position: absolute;
    right: 0;
    top: 20px;
-   text-align: right;
  }
 
 .contacts__phone {
@@ -58,17 +57,75 @@ img {
 }
 
 .contacts__graph {
+   display: block;
+   color: inherit;
    font-size: 14px;
    font-weight: bold;
    opacity: 0.7;
-   text-decoration: underline;     
+   text-decoration: underline;
+   margin-left: 67px;
+   padding: 0;
+   background: none;
+   border: none;
+   /* position: relative; */
 }
 
-.page {
+.contacts__graph--info {
+   display: none;
+   position: absolute;
+   width: 140px;
+   height: 43px;
+   background-color: #fff;
+   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+   line-height: 18px;
+   top: 50px;
+   right: 0;
+   text-align: center;
+   padding: 10px 20px;
+}
+
+.contacts__graph:hover {
+   color: #fff;
+   opacity: 1;
+   cursor: pointer;
+}
+
+.contacts__graph:hover .contacts__graph--info {
+   display: block;
+   position: absolute;
+   width: 140px;
+   height: 43px;
+   background-color: #fff;
+   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+   border-radius: 3px;
+   line-height: 18px;
+   top: 50px;
+   right: 0;
+   text-align: center;
+   padding: 10px 20px;
+}
+
+.contacts__week {
+   color: #1c5bc3;
+   font-weight: 700;
+   margin-bottom: 8px;
+   
+}
+
+.contacts__lunch {
+   color: #221f1f;
+   font-weight: 300;
+   padding-right: 20px;
+   line-height: 25px;
+}
+
+
+.content {
    width: 901px;   
 }
 
-.page, .sidebar {
+.content, .sidebar {
    display: inline-block;
    vertical-align: top;
 }
@@ -156,7 +213,7 @@ img {
 
 /* Тарифы */
 
-h2 {
+.title {
    color: #221f1f;
    font-size: 49px;
    line-height: 38px;
@@ -165,14 +222,17 @@ h2 {
 
 .tariffs__item {
    display: inline-block;
+   width: 250px;
+   height: 456px;
+   margin-bottom: 38px;
 }
 
-.tariffs__desc {
+/* .tariffs__desc {
    width: 250px;
    height: 456px;  
-}
+} */
 
-.tariffs__desc-central {
+.tariffs__item-central {
    border-radius: 5px;
    border: 1px solid #e8e9ed;
 }
@@ -182,17 +242,20 @@ h2 {
    width: 72px;
    height: 72px;
    margin: 29px auto 21px;
+   background-color: #4b73b5;
+   overflow: hidden;
+   border-radius: 50%;
 }
 
-.tariffs__icon-flower {   
+.tariffs__icon--flower {   
    background-image: url('../images/flower.png');
 }
 
-.tariffs__icon-star {
+.tariffs__icon--star {
    background-image: url('../images/star.png');
 }
 
-.tariffs__icon-palette {
+.tariffs__icon--palette {
    background-image: url('../images/palette.png');
 }
 
@@ -217,7 +280,7 @@ h2 {
    margin: 0px;   
 }
 
-.tariffs__text h5 {
+.tariffs__text h3 {
    margin-bottom: 6px;
    text-align: center;
    font-size: 11px;
@@ -246,6 +309,7 @@ h2 {
 /* Новости */
 
 .news__title {
+   /* margin-top: 61px; */
    margin-bottom: 72px;
 }
 
@@ -266,7 +330,7 @@ h2 {
 }
 
 .news__item::after {
-   content: url('../images/line.png');   
+   content: url('../images/line.png');
 }
 
 .news__item:last-child::after {
@@ -296,7 +360,7 @@ h2 {
    font-size: 18px;
    font-weight: 300;
    line-height: 28px;
-   margin-bottom: 0px;
+   margin-bottom: 10px;
 }
 
 /* Пагинация */
