@@ -227,11 +227,6 @@ img {
    margin-bottom: 38px;
 }
 
-/* .tariffs__desc {
-   width: 250px;
-   height: 456px;  
-} */
-
 .tariffs__item-central {
    border-radius: 5px;
    border: 1px solid #e8e9ed;
@@ -309,7 +304,6 @@ img {
 /* Новости */
 
 .news__title {
-   /* margin-top: 61px; */
    margin-bottom: 72px;
 }
 
@@ -464,4 +458,37 @@ img {
 .socials__item {
    display: inline-block;
    margin-right: 6px;
+}
+
+.socials__link {
+   display: block;
+   background: center center no-repeat;
+   width: 20px;
+   height: 20px;
+   background-color: #d2def3;
+   border-radius: 50%;
+}
+
+.socials__link:hover {
+   background-color: #fff;
+}
+
+.socials__link--vk {
+   background-image: url('../images/vk.png');
+}
+
+.socials__link--fb {
+   background-image: url('../images/fb.png');
+}
+
+.socials__link--google {
+   background-image: url('../images/google.png');
+}
+
+.socials__link--twitter {
+   background-image: url('../images/twitter.png');
+}
+
+.socials__link--mail {
+   background-image: url('../images/mail.png');
 }
