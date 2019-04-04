@@ -33,7 +33,7 @@ img {
 
 .header .container {
    position: relative;
-   height: 76px;
+   min-height: 76px;
 }
 
 .logo {
@@ -275,7 +275,7 @@ img {
    margin: 0px;   
 }
 
-.tariffs__text h3 {
+.tariffs__text .tariffs__name {
    margin-bottom: 6px;
    text-align: center;
    font-size: 11px;
@@ -404,6 +404,12 @@ img {
    color: #ffffff;
 }
 
+.pagination__item:hover {
+   background-color: #dee1e6;
+   border-radius: 15%;
+   /* opacity: 0.6; */
+}
+
 
 /* Футер */
 
@@ -414,7 +420,7 @@ img {
 
 .footer .container {
    position: relative;
-   height: 76px;
+   min-height: 76px;
 }
 
 .footer__author {
@@ -435,7 +441,7 @@ img {
    font-weight: bold;
 }
 
-.logo-footer {
+.logo--footer {
    display: inline-block;
    position: absolute;
    left: 50%;
