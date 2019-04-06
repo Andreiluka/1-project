@@ -1,5 +1,7 @@
 .tariffs__item {
-   display: inline-block;
+   display: inline-flex;
+   flex-direction: column;
+   /* display: inline-block; */
    width: 250px;
    margin-bottom: 38px;
 }

@@ -10,8 +10,7 @@ body {
    -moz-osx-font-smoothing: grayscale;
 }
 
-.wrapper {
-   
+.wrapper {   
    overflow: hidden;
    min-width: 1060px;
    min-height: 100%;
@@ -24,8 +23,15 @@ body {
 }
 
 .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
    width: 1058px;
    margin: 0 auto;   
+}
+
+.container--page {
+   align-items: flex-start
 }
 
 ul {

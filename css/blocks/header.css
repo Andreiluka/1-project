@@ -5,6 +5,6 @@
 }
 
 .header .container {
-   position: relative;
+   /* position: relative; */
    min-height: 76px;
 }

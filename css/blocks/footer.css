@@ -4,14 +4,14 @@
 }
 
 .footer .container {
-   position: relative;
+   /* position: relative; */
    min-height: 76px;
 }
 
 .footer__author {
    width: 236px;   
-   position: absolute;
-   left: 0;   
+   /* position: absolute;
+   left: 0;    */
    font-size: 14px;
    font-weight: 300;
    line-height: 18px;
