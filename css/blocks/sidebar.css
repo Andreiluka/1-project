@@ -1,0 +1,81 @@
+.sidebar {
+   display: inline-block;
+   vertical-align: top;
+   margin-top: 32px;
+   width: 153px;
+}
+
+.nav__item {
+   height: 18px;
+   margin-bottom: 30px;        
+}
+
+.nav__title {   
+   color: #4b73b5;
+   letter-spacing: 2.4px;
+   font-size: 12px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-decoration: none;
+   vertical-align: top;
+}
+
+.nav__icon-main:before {
+   content: url('../../images/main_icon.png');
+   margin-right: 18px;
+}
+
+.nav__icon-feed:before {
+   content: url('../../images/feed_icon.png');
+   margin-right: 16px;
+}
+
+.nav__icon-team:before {
+   content: url('../../images/team_icon.png');
+   margin-right: 14px;
+}
+
+/* отображение черным ссылки при наведении */
+
+.nav__title:hover {
+   color: #221f1f;   
+}
+
+.nav__icon-main:hover:before {   
+   content: url('../../images/main_icon_black.png')
+}
+
+.nav__icon-feed:hover:before {   
+   content: url('../../images/feed_icon_black.png')
+}
+
+.nav__icon-team:hover:before {   
+   content: url('../../images/team_icon_black.png')
+}
+
+
+/* отображение черным ссылки текущей страницы */
+
+.nav__active .nav__icon-main{
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-main:before{
+   content: url('../../images/main_icon_black.png')
+}
+
+.nav__active .nav__icon-feed{
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-feed:before{
+   content: url('../../images/feed_icon_black.png')
+}
+
+.nav__active .nav__icon-team{
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-team:before{
+   content: url('../../images/team_icon_black.png')
+}

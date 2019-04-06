@@ -1,0 +1,13 @@
+.logo {
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   top: 20px;
+}
+
+.logo--footer {
+   display: inline-block;
+   position: absolute;
+   left: 50%;
+   top: 20px;
+}

@@ -1,0 +1,27 @@
+.footer {
+   background-color: #4b73b5;
+   color: #ffffff;
+}
+
+.footer .container {
+   position: relative;
+   min-height: 76px;
+}
+
+.footer__author {
+   width: 236px;   
+   position: absolute;
+   left: 0;   
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 18px;
+}
+
+.foter__school {
+   font-weight: bold;
+   color: inherit;
+}
+
+.author {
+   font-weight: bold;
+}
