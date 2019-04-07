@@ -7,9 +7,15 @@
 @import url('./blocks/contacts.css');
 @import url('./blocks/sidebar.css');
 @import url('./blocks/content.css');
+@import url('./blocks/breadcrumbs.css');
 @import url('./blocks/tariffs.css');
 @import url('./blocks/title.css');
 @import url('./blocks/news.css');
+@import url('./blocks/content-list.css');
 @import url('./blocks/pagination.css');
 @import url('./blocks/footer.css');
 @import url('./blocks/socials.css');
+
+@import url('./blocks/reviews.css');
+@import url('./blocks/reference.css');
+@import url('./blocks/form.css');
