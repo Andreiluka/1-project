@@ -179,15 +179,23 @@
                   <div class="form__row">
                      <label class="form__block">
                         <div class="form__block-name">Текст отзыва</div>
-                        <textarea name="" class="form__textarea form__input" rows="4" placeholder="Мне понравилось"></textarea>
+                        <textarea name="" class="form__textarea form__input" placeholder="Мне понравилось"></textarea>
                      </label>
                   </div>
                   <div class="form__buttons">
-                        <label class="form__block">
-                           <div class="form__block-name">Отображать фото в отзыве??</div>
-                           <input type="radio" value="yes" name="foto">
-                           <input type="radio" value="no" name="foto">
+                     <div class="form__radio-buttons">
+                        <div class="form__radio-name form__block-name">Отображать фото в отзыве?</div>
+                        <label class="form__radio-lbl">
+                           <input type="radio" class="form__radio" value="yes" name="foto" checked>
+                           <span class="form__radio-custom"></span>
+                           <span class="form__radio-text">Да</span>
                         </label>
+                        <label class="form__radio-lbl">
+                           <input type="radio" class="form__radio" value="no" name="foto">
+                           <span class="form__radio-custom"></span>
+                           <span class="form__radio-text">Нет</span>
+                        </label>
+                     </div>
                      <button type="submit" class="form__button-submit">отправить</button>
                   </div>
                </form>

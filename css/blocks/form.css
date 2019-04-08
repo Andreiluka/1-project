@@ -5,9 +5,14 @@
    margin: 55px auto;
 }
 
+.form__title {
+   margin-top: 0;
+   margin-bottom: 19px;
+}
+
 .form__row {   
    display: flex;
-   margin-bottom: 31px;
+   margin-bottom: 12px;
 }
 
 .form__block {
@@ -21,7 +26,9 @@
 
 .form__block-name {   
    color: #221f1f;
-   margin-bottom: 10px;
+   /* margin-bottom: 10px; */
+   font-size: 14px;
+   line-height: 28px;
 }
 
 .form__input {
@@ -40,11 +47,70 @@
 
 .form__textarea {
    resize: vertical;
+   min-height: 60px;
 }
 
 .form__buttons {
    display: flex;
    justify-content: space-between;
+}
+
+.form__radio-lbl {
+   display: inline-flex;
+   align-items: center;
+   margin-right: 18px;
+}
+
+.form__radio-lbl:last-child {
+   margin-right: 0;
+}
+
+.form__radio {
+   display: none;
+}
+
+.form__radio-custom {
+   display: block;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #c9c9c9;
+   border-radius: 50%;
+   margin-right: 5px;
+   position: relative;
+}
+
+.form__radio-custom:after {
+   content: '';
+   display: block;
+   width: 8px;
+   height: 8px;
+   background-color: #4b73b5;
+   border-radius: 50%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   display: none;
+}
+
+.form__radio-text {
+   font-size: 14px;
+   font-weight: 300;
+   /* line-height: 54px; */
+}
+
+.form__radio:checked + .form__radio-custom {
+   border: 1px solid #4b73b5;
+}
+
+.form__radio:checked + .form__radio-custom:after {
+   display: block;
+}
+
+.form__radio:checked + .form__radio-custom + .form__radio-text {
+   color: #1c5bc3;
 }
 
 .form__button-submit {
@@ -66,12 +132,11 @@
 }
 
 .form__button-submit:hover {
-   color: #4b73b5;
+   color: #1c5bc3;
    background-color: #fff;
-   border: 1px solid #4b73b5;
 }
 
 .form__button-submit:hover:after {
-   content: url('../../images/main_icon.png');
+   content: url('../../images/button_icon-blue.png');
    margin-left: 11px;
 }
