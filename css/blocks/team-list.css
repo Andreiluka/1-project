@@ -1,0 +1,25 @@
+.team-list {
+   display: flex;
+   flex-wrap: wrap;
+   box-sizing: border-box;
+   margin-left: -20px;
+}
+
+.team__item {
+   width: calc(100% / 3 - 22px);
+   margin-left: 20px;
+   margin-bottom: 47px;
+}
+
+.team-member {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.team-member__avatar {
+   overflow: hidden;
+   max-width: 160px;
+   border-radius: 50%;
+}

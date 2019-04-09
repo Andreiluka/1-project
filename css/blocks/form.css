@@ -48,6 +48,7 @@
 .form__textarea {
    resize: vertical;
    min-height: 60px;
+   margin-bottom: 19px;
 }
 
 .form__buttons {
@@ -119,11 +120,12 @@
    border-radius: 5px;
    font-size: 12px;
    font-weight: 700;
-   line-height: 54px;
+   line-height: 47px;
    text-transform: uppercase;
    letter-spacing: 2.4px;
    color: #ffffff;
    padding: 0 20px;
+   height: 45px;
 }
 
 .form__button-submit::after {
