@@ -61,7 +61,7 @@
                   </li>
                </ul>
                <section class="reviews">
-                  <h2 class="title reviews__title">Отзывы</h2>
+                  <h1 class="title reviews--title">Отзывы</h1>
                   <ul class="content-list content-list--reviews">
                      <li class="content-list__item">
                         <div class="content-list__pic">
@@ -157,15 +157,15 @@
                   <p class="reference__text">
                      Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить 
                      <a href="#" class="reference__request">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки 
-                     <span class="reference__phone">8 (800) 00-392-10</span>.
+                     <a href="tel:+78000039210" class="reference__phone">8 (800) 00-392-10</a>.
                   </p>
                </div>
             </div>
          </div>
          <div class="container">
-            <div class="form">
-               <form action="" class="form__tag">
-                  <h3 class="title form__title">Оставить отзыв</h3>
+            <section class="form">
+               <h2 class="title form__title">Оставить отзыв</h2>
+               <form action="" class="form__tag">                  
                   <div class="form__row">
                      <label class="form__block">
                         <div class="form__block-name">Ваше имя</div>
@@ -185,12 +185,12 @@
                   <div class="form__buttons">
                      <div class="form__radio-buttons">
                         <div class="form__radio-name form__block-name">Отображать фото в отзыве?</div>
-                        <label class="form__radio-lbl">
+                        <label class="form__radio-lbl" tabindex="0">
                            <input type="radio" class="form__radio" value="yes" name="foto" checked>
                            <span class="form__radio-custom"></span>
                            <span class="form__radio-text">Да</span>
                         </label>
-                        <label class="form__radio-lbl">
+                        <label class="form__radio-lbl" tabindex="0">
                            <input type="radio" class="form__radio" value="no" name="foto">
                            <span class="form__radio-custom"></span>
                            <span class="form__radio-text">Нет</span>
@@ -199,7 +199,7 @@
                      <button type="submit" class="form__button-submit">отправить</button>
                   </div>
                </form>
-            </div>
+            </section>
          </div>
       </div> 
 

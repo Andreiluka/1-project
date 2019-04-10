@@ -3,16 +3,14 @@
    margin: 58px auto;
    font-size: 14px;
    line-height: 23px;
+   display: flex;
 }
 
-.pagination__display, 
 .pagination__controls,
 .pagination__prev,
 .pagination__next,
-.pagination__pages,
-.pagination__item {
-   display: inline-block;
-   vertical-align: middle;
+.pagination__pages {
+   display: inline-flex;
 }
 
 .pagination__display {
@@ -31,7 +29,10 @@
    width: 25px;
    height: 25px;
    text-align: center;
-   margin-left: -3px;
+}
+
+.pagination__prev, .pagination__next {
+   justify-content: center;
 }
 
 .pagination__item-active {   
@@ -46,5 +47,4 @@
 .pagination__item:hover {
    background-color: #dee1e6;
    border-radius: 15%;
-   /* opacity: 0.6; */
 }

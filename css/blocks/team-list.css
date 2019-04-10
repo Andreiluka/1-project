@@ -2,12 +2,12 @@
    display: flex;
    flex-wrap: wrap;
    box-sizing: border-box;
-   margin-left: -20px;
+   margin-left: -47px;
 }
 
 .team__item {
-   width: calc(100% / 3 - 22px);
-   margin-left: 20px;
+   width: calc(100% / 3 - 47px);
+   margin-left: 47px;
    margin-bottom: 47px;
 }
 
@@ -22,4 +22,24 @@
    overflow: hidden;
    max-width: 160px;
    border-radius: 50%;
+   margin-bottom: 19px;
+}
+
+.team-member__name {
+   color: #221f1f;
+   font-size: 18px;
+   font-weight: bold;
+   line-height: 20px;
+   margin-bottom: 6px;
+}
+
+.team-member__prof {
+   color: #4b73b5;
+   font-weight: 700;
+}
+
+.team-member__text {
+   font-weight: 300;
+   margin-top: -7px;
+   line-height: 21px;
 }
