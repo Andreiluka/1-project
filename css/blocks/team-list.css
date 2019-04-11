@@ -22,7 +22,59 @@
    overflow: hidden;
    max-width: 160px;
    border-radius: 50%;
-   margin-bottom: 19px;
+   margin-bottom: 19px;   
+   position: relative;
+   cursor: pointer;
+}
+
+.team-member__avatar::after {   
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   margin: auto;
+   color: #fff;
+   font-size: 24px;
+   line-height: 165px;   
+}
+
+.avanar--pilot::after {
+   content: "Алексей";
+}
+
+.avanar--steward::after {
+   content: 'Инна'
+}
+
+.avatar--technicist::after {
+   content: 'Борис';
+}
+
+.avatar--dispatcher::after {
+   content: 'Элина';
+}
+
+.avatar--major-steward::after {
+   content: 'Елена';   
+}
+
+.avatar--second-Pilot::after {
+   content: 'Юрий';
+}
+
+
+.team-member__avatar-pic {
+   filter: brightness(60%);
+   transition: 0.4s;
+}
+
+.team-member__avatar:hover:after {
+   display: none;
+}
+
+.team-member__avatar-pic:hover {
+   filter: brightness(100%);
 }
 
 .team-member__name {

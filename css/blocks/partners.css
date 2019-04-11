@@ -17,10 +17,10 @@
    justify-content: center;
    align-items: center;
    filter: grayscale(100%);
+   transition: 0.2s;
 }
 
 .partners__item:hover {
-   filter: grayscale(0%);
-   transition: 0.3s;
+   filter: grayscale(0%);  
 }
 
