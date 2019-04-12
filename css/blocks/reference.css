@@ -8,15 +8,13 @@
 
 .container--reference {   
    justify-content: center;
-}
-
-.reference__block {
    width: 625px;
    color: #ffffff;
    font-size: 18px;
    font-weight: 300;
    line-height: 30px;
 }
+
 
 .reference__request, .reference__phone {
    font-weight: 700;

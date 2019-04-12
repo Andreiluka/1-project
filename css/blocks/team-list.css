@@ -18,7 +18,7 @@
    text-align: center;
 }
 
-.team-member__avatar {
+.team__avatar {
    overflow: hidden;
    max-width: 160px;
    border-radius: 50%;
@@ -27,7 +27,7 @@
    cursor: pointer;
 }
 
-.team-member__avatar::after {   
+.team__avatar::after {   
    position: absolute;
    top: 0;
    left: 0;
@@ -39,45 +39,45 @@
    line-height: 165px;   
 }
 
-.avanar--pilot::after {
+.team__avatar--pilot::after {
    content: "Алексей";
 }
 
-.avanar--steward::after {
+.team__avatar--steward::after {
    content: 'Инна'
 }
 
-.avatar--technicist::after {
+.team__avatar--technicist::after {
    content: 'Борис';
 }
 
-.avatar--dispatcher::after {
+.team__avatar--dispatcher::after {
    content: 'Элина';
 }
 
-.avatar--major-steward::after {
+.team__avatar--major-steward::after {
    content: 'Елена';   
 }
 
-.avatar--second-Pilot::after {
+.team__avatar--second-Pilot::after {
    content: 'Юрий';
 }
 
 
-.team-member__avatar-pic {
+.team__avatar-pic {
    filter: brightness(60%);
    transition: 0.4s;
 }
 
-.team-member__avatar:hover:after {
+.team__avatar:hover:after {
    display: none;
 }
 
-.team-member__avatar-pic:hover {
+.team__avatar-pic:hover {
    filter: brightness(100%);
 }
 
-.team-member__name {
+.team__name {
    color: #221f1f;
    font-size: 18px;
    font-weight: bold;
@@ -85,12 +85,12 @@
    margin-bottom: 6px;
 }
 
-.team-member__prof {
+.team__prof {
    color: #4b73b5;
    font-weight: 700;
 }
 
-.team-member__text {
+.team__text {
    font-weight: 300;
    margin-top: -7px;
    line-height: 21px;
