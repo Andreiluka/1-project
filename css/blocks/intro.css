@@ -64,6 +64,7 @@
 
 .intro__button {
    text-decoration: none;
+   position: relative;
 }
 
 .intro__button-text {   
@@ -75,25 +76,43 @@
    text-transform: uppercase;
    letter-spacing: 2.4px;
    color: #1c5bc3;
-   padding: 0 20px;
+   padding: 0 41px 0 20px;
    height: 45px;
-   transition: 0.2s;
+   transition: 0.3s;
+}
+
+.intro__button-text:before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 15px;
+   right: 20px;
+   width: 15px;
+   height: 14px;
+   background: url('../../images/css_sprite.png') -131px -10px;
+   transition: 0.3s;
 }
 
 .intro__button-text:after {
-   content: url('../../images/button_icon-blue.png');
-   margin-left: 9px;
+   content: '';
+   display: block;
+   position: absolute;
+   top: 15px;
+   right: 20px;
+   width: 15px;
+   height: 14px;
+   background: url('../../images/css_sprite.png') -166px -10px;
+   transition: 0.3s;
+}
+
+.intro__button-text:hover:after {
+   opacity: 0;
 }
 
 .intro__button-text:hover {
-   /* border: 1px solid #1c5bc3; */
    background-color: #1c5bc3;
    color: #fff;
 }
 
-.intro__button-text:hover:after {
-   content: url('../../images/button_icon.png');
-   margin-left: 9px;
-}
 
 

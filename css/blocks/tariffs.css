@@ -19,18 +19,40 @@
    background-color: #4b73b5;
    overflow: hidden;
    border-radius: 50%;
+   position: relative;
 }
 
-.tariffs__icon--flower {   
-   background-image: url('../../images/flower.png');
+.tariffs__icon--flower::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 20px;
+   left: 22.5px;
+   width: 27px; 
+   height: 31px;
+   background: url('../../images/css_sprite.png') -476px -10px;
 }
 
-.tariffs__icon--star {
-   background-image: url('../../images/star.png');
+.tariffs__icon--star::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   width: 32px; 
+   height: 32px;
+   background: url('../../images/css_sprite.png') -571px -10px;
 }
 
-.tariffs__icon--palette {
-   background-image: url('../../images/palette.png');
+.tariffs__icon--palette::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 21.5px;
+   left: 22px;
+   width: 28px; 
+   height: 29px;
+   background: url('../../images/css_sprite.png') -523px -10px;
 }
 
 .tariffs__text {

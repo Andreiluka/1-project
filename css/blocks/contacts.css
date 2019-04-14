@@ -12,6 +12,10 @@
    color: inherit;
 }
 
+.contacts__phone:hover {
+   text-decoration: underline;
+}
+
 .contacts__graph {
    color: inherit;
    font-size: 14px;

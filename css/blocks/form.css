@@ -1,5 +1,5 @@
 .form {
-   width: 560px;
+   width: 767px;
    background-color: #f5f5f5;
    padding: 52px 6.62%;
    margin: 55px auto;
@@ -16,7 +16,7 @@
 }
 
 .form__block {
-   margin-right: 53px;
+   margin-right: 23px;
    flex: 1;
 }
 
@@ -46,7 +46,7 @@
 
 .form__textarea {
    resize: vertical;
-   min-height: 60px;
+   min-height: 90px;
    margin-bottom: 19px;
 }
 
@@ -121,15 +121,36 @@
    text-transform: uppercase;
    letter-spacing: 2.4px;
    color: #ffffff;
-   padding: 0 20px;
+   padding: 0 41px 0 20px;
    height: 45px;
+   transition: 0.3s;
+   position: relative;
+}
+
+.form__button-submit::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: 16px;
+   right: 20px;
+   width: 15px;
+   height: 14px;
+   background: url('../../images/css_sprite.png') -166px -10px;
    transition: 0.3s;
 }
 
 .form__button-submit::after {
-   content: url('../../images/button_icon.png');
-   margin-left: 11px;
+   content: '';
+   display: block;
+   position: absolute;
+   top: 16px;
+   right: 20px;
+   width: 15px;
+   height: 14px;
+   background: url('../../images/css_sprite.png') -131px -10px;
+   transition: 0.3s;
 }
+
 
 .form__button-submit:hover {
    color: #1c5bc3;
@@ -137,6 +158,12 @@
 }
 
 .form__button-submit:hover:after {
+   opacity: 0;
+}
+
+
+
+/* .form__button-submit:hover:after {
    content: url('../../images/button_icon-blue.png');
    margin-left: 11px;
-}
+} */

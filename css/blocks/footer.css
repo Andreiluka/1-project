@@ -22,6 +22,10 @@
    color: inherit;
 }
 
+.foter__school:hover {
+   text-decoration: none;
+}
+
 .author {
    font-weight: bold;
 }
