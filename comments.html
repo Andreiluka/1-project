@@ -32,37 +32,66 @@
          </header>
 
          <div class="container container--page">
-            <aside class="sidebar">
-               <nav class="nav">
-                  <ul class="nav__list">
-                     <li class="nav__item">
-                        <a href="https://andreiluka.github.io/1-project/index.html" class="nav__title nav__icon-main">
-                           главная
-                        </a>
+            <aside class="sidebar">               
+               <div class="reference">
+                  <div class="container container--reference">               
+                     <p class="reference__text">
+                        Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить 
+                        <a href="#" class="reference__request">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки 
+                        <a href="tel:+78000039210" class="reference__phone">8 (800) 00-392-10</a>.
+                     </p>               
+                  </div>
+               </div>
+               <div class="socials">
+                  <h5 class="socials__text">Наши социальные сети</h5>
+                  <ul class="socials__list">
+                     <li class="socials__item">
+                        <a href="#" class="socials__link  socials__link--vk" title="Vkontakte"></a>
                      </li>
-                     <li class="nav__item nav__active">
-                        <a class="nav__title nav__icon-feed">
-                           отзывы
-                        </a>
+                     <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--fb" title="Facebook"></a>
                      </li>
-                     <li class="nav__item">
-                        <a href="https://andreiluka.github.io/1-project/team.html" class="nav__title nav__icon-team">
-                           экипаж
-                        </a>
+                     <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--google" title="Google"></a>
+                     </li>
+                     <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--twitter" title="Twitter"></a>
+                     </li>
+                     <li class="socials__item">
+                        <a href="#" class="socials__link socials__link--mail" title="Mail"></a>
                      </li>
                   </ul>
-               </nav>
+               </div>
             </aside>
             
             <main class="content">
-               <ul class="breadcrumbs">
+               <nav class="nav">
+                     <ul class="nav__list">
+                        <li class="nav__item">
+                           <a href="https://andreiluka.github.io/1-project/index.html" class="nav__title nav__icon-main">
+                              главная
+                           </a>
+                        </li>
+                        <li class="nav__item nav__active">
+                           <a class="nav__title nav__icon-feed">
+                              отзывы
+                           </a>
+                        </li>
+                        <li class="nav__item">
+                           <a href="https://andreiluka.github.io/1-project/team.html" class="nav__title nav__icon-team">
+                              экипаж
+                           </a>
+                        </li>
+                     </ul>
+               </nav>
+               <!-- <ul class="breadcrumbs">
                   <li class="breadcrumbs__item">
                      <a href="https://andreiluka.github.io/1-project/main.html" class="breadcrumbs__link">Главная</a>
                   </li>                        
                   <li class="breadcrumbs__item breadcrumbs__item--active">
                      <a class="breadcrumbs__link">Отзывы</a>
                   </li>
-               </ul>
+               </ul> -->
                <section class="reviews">
                   <h1 class="title reviews--title">Отзывы</h1>
                   <ul class="content-list content-list--reviews">
@@ -152,55 +181,44 @@
                      <a href="#" class="pagination__next">></a>
                   </div>
                </div>
-            </main>
-         </div>
-         <div class="reference">
-            <div class="container container--reference">               
-               <p class="reference__text">
-                  Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить 
-                  <a href="#" class="reference__request">заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки 
-                  <a href="tel:+78000039210" class="reference__phone">8 (800) 00-392-10</a>.
-               </p>               
-            </div>
-         </div>
-         <div class="container">
-            <section class="form">
-               <h2 class="title form__title">Оставить отзыв</h2>
-               <form action="" class="form__tag">                  
-                  <div class="form__row">
-                     <label class="form__block">
-                        <div class="form__block-name">Ваше имя</div>
-                        <input type="text" class="form__input" placeholder="Андрей">
-                     </label>
-                     <label class="form__block">
-                        <div class="form__block-name">Ссылка на профиль VK</div>
-                        <input type="text" class="form__input" placeholder="vk.com/example">
-                     </label>
-                  </div>
-                  <div class="form__row">
-                     <label class="form__block">
-                        <div class="form__block-name">Текст отзыва</div>
-                        <textarea name="" class="form__textarea form__input" placeholder="Мне понравилось"></textarea>
-                     </label>
-                  </div>
-                  <div class="form__buttons">
-                     <div class="form__radio-buttons">
-                        <div class="form__radio-name form__block-name">Отображать фото в отзыве?</div>
-                        <label class="form__radio-lbl" tabindex="0">
-                           <input type="radio" class="form__radio" value="yes" name="foto" checked>
-                           <span class="form__radio-custom"></span>
-                           <span class="form__radio-text">Да</span>
+               <section class="form">
+                  <h2 class="title form__title">Оставить отзыв</h2>
+                  <form action="" class="form__tag">                  
+                     <div class="form__row">
+                        <label class="form__block">
+                           <div class="form__block-name">Ваше имя</div>
+                           <input type="text" class="form__input" placeholder="Андрей">
                         </label>
-                        <label class="form__radio-lbl" tabindex="0">
-                           <input type="radio" class="form__radio" value="no" name="foto">
-                           <span class="form__radio-custom"></span>
-                           <span class="form__radio-text">Нет</span>
+                        <label class="form__block">
+                           <div class="form__block-name">Ссылка на профиль VK</div>
+                           <input type="text" class="form__input" placeholder="vk.com/example">
                         </label>
                      </div>
-                     <button type="submit" class="form__button-submit">отправить</button>
-                  </div>
-               </form>
-            </section>
+                     <div class="form__row">
+                        <label class="form__block">
+                           <div class="form__block-name">Текст отзыва</div>
+                           <textarea name="" class="form__textarea form__input" placeholder="Мне понравилось"></textarea>
+                        </label>
+                     </div>
+                     <div class="form__buttons">
+                        <div class="form__radio-buttons">
+                           <div class="form__radio-name form__block-name">Отображать фото в отзыве?</div>
+                           <label class="form__radio-lbl" tabindex="0">
+                              <input type="radio" class="form__radio" value="yes" name="foto" checked>
+                              <span class="form__radio-custom"></span>
+                              <span class="form__radio-text">Да</span>
+                           </label>
+                           <label class="form__radio-lbl" tabindex="0">
+                              <input type="radio" class="form__radio" value="no" name="foto">
+                              <span class="form__radio-custom"></span>
+                              <span class="form__radio-text">Нет</span>
+                           </label>
+                        </div>
+                        <button type="submit" class="form__button-submit">отправить</button>
+                     </div>
+                  </form>
+               </section>
+            </main>
          </div>
       </div> 
 
@@ -215,27 +233,7 @@
             </div>
             <a href="https://andreiluka.github.io/1-project/main.html" class="logo">
                <img src="./images/logo.png" class="logo__picture" alt="логотип">
-            </a>
-            <div class="socials">
-               <h5 class="socials__text">Наши социальные сети</h5>
-               <ul class="socials__list">
-                  <li class="socials__item">
-                     <a href="#" class="socials__link  socials__link--vk" title="Vkontakte"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--fb" title="Facebook"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--google" title="Google"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--twitter" title="Twitter"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--mail" title="Mail"></a>
-                  </li>
-               </ul>
-            </div>
+            </a>            
          </div>
       </footer>
    </div>

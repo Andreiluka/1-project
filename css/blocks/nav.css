@@ -1,0 +1,194 @@
+.nav {
+   display: flex;
+}
+
+.nav__item {
+   display: inline-flex;
+   height: 18px;
+   margin-right: 95px;
+   margin-bottom: 17px;
+}
+
+.nav__title {   
+   color: #4b73b5;
+   letter-spacing: 2.4px;
+   font-size: 12px;
+   font-weight: bold;
+   text-transform: uppercase;
+   text-decoration: none;
+   vertical-align: top;
+   transition: .3s;
+}
+
+
+
+/* Пункт меню ГЛАВНАЯ */
+
+.nav__icon-main {
+   position: relative;
+   padding-left: 35px;
+}
+
+.nav__icon-main::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   width: 17px;
+   height: 18px;
+   background: url('../../images/css_sprite.png') -273px -10px;
+   transition: .3s;
+   opacity: 0;
+}
+.nav__icon-main::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   width: 17px;
+   height: 18px;
+   background: url('../../images/css_sprite.png') -236px -10px;
+   transition: .3s;
+}
+
+
+/* Пункт меню ОТЗЫВЫ */
+
+.nav__icon-feed {
+   position: relative;
+   padding-left: 36px;
+}
+
+.nav__icon-feed::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   width: 20px;
+   height: 18px;
+   background: url('../../images/css_sprite.png') -350px -10px;
+   transition: .3s;
+   opacity: 0;
+}
+.nav__icon-feed::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   width: 20px;
+   height: 18px;
+   background: url('../../images/css_sprite.png') -310px -10px;
+   transition: .3s;
+}
+
+
+/* Пункт меню ЭКИПАЖ */
+
+.nav__icon-team {
+   position: relative;
+   padding-left: 38px;
+}
+
+.nav__icon-team::before {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   width: 23px;
+   height: 18px;
+   background: url('../../images/css_sprite.png') -433px -10px;
+   transition: .3s;
+   opacity: 0;
+}
+.nav__icon-team::after {
+   content: '';
+   display: block;
+   position: absolute;
+   top: -3px;
+   left: 0px;
+   width: 23px;
+   height: 18px;
+   background: url('../../images/css_sprite.png') -390px -10px;
+   transition: .3s;
+}
+
+
+
+/* отображение черным ссылки при наведении */
+
+.nav__title:hover {
+   color: #221f1f;   
+}
+
+
+.nav__icon-main:hover:before {
+   opacity: 1;
+}
+
+.nav__icon-main:hover:after {
+   opacity: 0;
+}
+
+
+.nav__icon-feed:hover:before {
+   opacity: 1;
+}
+
+.nav__icon-feed:hover:after {
+   opacity: 0;
+}
+
+
+.nav__icon-team:hover:before {
+   opacity: 1;
+}
+
+.nav__icon-team:hover:after {
+   opacity: 0;
+}
+
+
+/* отображение черным ссылки текущей страницы */
+
+.nav__active .nav__icon-main {
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-main:before {
+   opacity: 1;
+}
+
+.nav__active .nav__icon-main:after {
+   opacity: 0;
+}
+
+
+.nav__active .nav__icon-feed {
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-feed:before {
+   opacity: 1;
+}
+
+.nav__active .nav__icon-feed:after {
+   opacity: 0;
+}
+
+
+.nav__active .nav__icon-team {
+   color: #221f1f;
+}
+
+.nav__active .nav__icon-team:before {
+   opacity: 1;
+}
+
+.nav__active .nav__icon-team:after {
+   opacity: 0;
+}

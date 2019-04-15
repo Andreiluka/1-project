@@ -32,29 +32,65 @@
 
          <div class="container container--page">
             <aside class="sidebar">
-               <nav class="nav">
-                  <ul class="nav__list">
-                     <li class="nav__item nav__active">
-                        <a class="nav__title nav__icon-main">
-                           главная
-                        </a>
-                     </li>
-                     <li class="nav__item">
-                        <a href="https://andreiluka.github.io/1-project/comments.html" class="nav__title nav__icon-feed">
-                           отзывы
-                        </a>
-                     </li>
-                     <li class="nav__item">
-                        <a href="https://andreiluka.github.io/1-project/team.html" class="nav__title nav__icon-team">
-                           экипаж
-                        </a>
-                     </li>
-                  </ul>
-               </nav>
+               <div class="tariffs__top">
+                  <h2 class="tariffs__title">топ-тариф</h2>
+                  <div class="tariffs__text">
+                     <h3 class="tariffs__name">стандарт</h3>
+                     <p>Создан для вашего комфортного отдыха</p>
+                     <ul class="tariffs__include">
+                        <li class="tariffs__include-item">Питание включено</li>
+                        <li class="tariffs__include-item">Багаж (5 кг)</li>
+                        <li class="tariffs__include-item">Детское кресло</li>
+                     </ul>
+                  </div>
+                  <div class="tariffs__price">
+                     <span class="tariffs__currency">$</span>
+                     <span class="tariffs__value">19</span>
+                  </div>                     
+               </div>
+               <div class="socials">
+                     <h5 class="socials__text">Наши социальные сети</h5>
+                     <ul class="socials__list">
+                        <li class="socials__item">
+                           <a href="#" class="socials__link  socials__link--vk" title="Vkontakte"></a>
+                        </li>
+                        <li class="socials__item">
+                           <a href="#" class="socials__link socials__link--fb" title="Facebook"></a>
+                        </li>
+                        <li class="socials__item">
+                           <a href="#" class="socials__link socials__link--google" title="Google"></a>
+                        </li>
+                        <li class="socials__item">
+                           <a href="#" class="socials__link socials__link--twitter" title="Twitter"></a>
+                        </li>
+                        <li class="socials__item">
+                           <a href="#" class="socials__link socials__link--mail" title="Mail"></a>
+                        </li>
+                     </ul>
+               </div>
             </aside>
-            <main class="content">            
+            <main class="content">
+                  <nav class="nav">
+                        <ul class="nav__list">
+                           <li class="nav__item nav__active">
+                              <a class="nav__title nav__icon-main">
+                                 главная
+                              </a>
+                           </li>
+                           <li class="nav__item">
+                              <a href="https://andreiluka.github.io/1-project/comments.html" class="nav__title nav__icon-feed">
+                                 отзывы
+                              </a>
+                           </li>
+                           <li class="nav__item">
+                              <a href="https://andreiluka.github.io/1-project/team.html" class="nav__title nav__icon-team">
+                                 экипаж
+                              </a>
+                           </li>
+                        </ul>
+                  </nav>        
                <img src="./images/Photo.png" alt="самолет в облаках" class="content__preview-img">
-               <section class="tariffs">
+               <!-- <section class="tariffs">
                   <h1 class="title">Тарифы</h1>
                   <ul class="tariffs__list">
                      <li class="tariffs__item">                     
@@ -106,15 +142,15 @@
                         </div>                     
                      </li>
                   </ul>
-               </section>
+               </section> -->
                <section class="news">
-                  <h2 class="title news__title">Последние новости</h2>
+                  <h1 class="title news__title">Последние новости</h1>
                   <ul class="content-list content-list--news">
-                     <li class="content-list__item">
-                        <div class="content-list__pic">
+                     <li class="content-list__item content-list--news-item">
+                        <div class="content-list__pic content-list--news-pic">
                            <img src="./images/planeflying.jpg" class="content-list__pic-img" alt="летящий самолет">
                         </div>
-                        <div class="content-list__desc">
+                        <div class="content-list__desc content-list--news-desc">
                            <div class="content-list__data">12.10.2016</div>
                            <h3 class="content-list__name">Ночные перелеты дешевле!</h3>
                            <p class="content-list__text">Летящий в ночном небе самолет — зрелище загадочное и романтическое.
@@ -123,11 +159,11 @@
                               делам.</p>
                         </div>
                      </li>
-                     <li class="content-list__item">
-                        <div class="content-list__pic">
+                     <li class="content-list__item content-list--news-item">
+                        <div class="content-list__pic content-list--news-pic">
                            <img src="./images/mountains.jpg" class="content-list__pic-img" alt="горы">
                         </div>
-                        <div class="content-list__desc">
+                        <div class="content-list__desc content-list--news-desc">
                            <div class="content-list__data">01.02.2016</div>
                            <h3 class="content-list__name">Путешествие в Грузию стало доступнее</h3>
                            <p class="content-list__text">Экскурсии по Грузии в 2017 году от русских гидов: самые интересные
@@ -136,11 +172,11 @@
                               возможность!</p>
                         </div>
                      </li>
-                     <li class="content-list__item">
-                        <div class="content-list__pic">
+                     <li class="content-list__item content-list--news-item">
+                        <div class="content-list__pic content-list--news-pic">
                            <img src="./images/Layer 5.jpg" class="content-list__pic-img" alt="ребенок">
                         </div>
-                        <div class="content-list__desc">
+                        <div class="content-list__desc content-list--news-desc">
                            <div class="content-list__data">22.12.2015</div>
                            <h3 class="content-list__name">Детские авиабилеты доступны для бизнес-класса</h3>
                            <p class="content-list__text">Путешествие на самолете с детьми - небольшое испытание для родителей.
@@ -213,26 +249,7 @@
             <a href="#" class="logo">
                <img src="./images/logo.png" class="logo__picture" alt="логотип">
             </a>
-            <div class="socials">
-               <h5 class="socials__text">Наши социальные сети</h5>
-               <ul class="socials__list">
-                  <li class="socials__item">
-                     <a href="#" class="socials__link  socials__link--vk" title="Vkontakte"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--fb" title="Facebook"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--google" title="Google"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--twitter" title="Twitter"></a>
-                  </li>
-                  <li class="socials__item">
-                     <a href="#" class="socials__link socials__link--mail" title="Mail"></a>
-                  </li>
-               </ul>
-            </div>
+            
          </div>
       </footer>
    </div>

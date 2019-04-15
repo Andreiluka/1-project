@@ -1,11 +1,11 @@
 .socials {
-   text-align: left;
+   margin-top: 30px;
 }
 
 .socials__text {
    margin:0px 0px 5px 0px;
    font-size: 14px;
-   font-weight: 400;
+   font-weight: 700;
 }
 
 .socials__list {
@@ -20,23 +20,13 @@
    align-items: center;
    width: 20px;
    height: 20px;
-   background-color: #d2def3;
+   /* background-color: #d2def3; */
    border-radius: 50%;
 }
 
-/* .socials__link {
-   display: flex;
-   background: center center no-repeat;
-   justify-content: center;
-   align-items: center;
-   width: 20px;
-   height: 20px;
-   background-color: #d2def3;
-   border-radius: 50%;
-} */
 
 .socials__item:hover {
-   background-color: #fff;
+   background-color: #d2def3;
 }
 
 .socials__link--vk {
@@ -64,7 +54,6 @@
 }
 
 .socials__link--mail {
-   /* background-image: url('../../images/mail.png'); */
    width: 12px; 
    height: 9px;
    background: url('../../images/css_sprite.png') -67px -10px;
