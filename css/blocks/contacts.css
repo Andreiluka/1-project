@@ -23,8 +23,15 @@
    opacity: 0.7;
    text-decoration: underline;
    padding: 0;
-   background: none;
-   border: none;
+   /* background: none;
+   border: none; */
+   transition: 0.5s;
+}
+
+.contacts__graph:hover {
+   color: #fff;
+   opacity: 1;
+   cursor: pointer;
 }
 
 .contacts__graph--info {
@@ -42,12 +49,6 @@
    padding: 10px 20px;
 }
 
-.contacts__graph:hover {
-   color: #fff;
-   opacity: 1;
-   cursor: pointer;
-}
-
 .contacts__graph:hover .contacts__graph--info {
    display: flex;
    flex-direction: column;
@@ -63,6 +64,16 @@
    right: 0;
    text-align: center;
    padding: 10px 20px;
+}
+
+.contacts__graph--info::before {     
+   content: '';
+   border: 9px solid transparent;
+   border-bottom-color: #ffffff;
+   position: absolute;
+   bottom: 58px;
+   right: 8px;
+   
 }
 
 .contacts__week {
