@@ -1,4 +1,4 @@
-.tariffs__top {
+.tariffs {
    display: inline-flex;
    flex-direction: column;
    width: 272px;
@@ -7,13 +7,10 @@
 }
 
 .tariffs__title {
-   font-size: 18px;
-   font-weight: 700;
    line-height: 14px;
-   text-transform: uppercase;
-   color: #221f1f;
    margin: 29px auto 21px;
 }
+
 
 /* .tariffs__item-central {
    border-radius: 5px;

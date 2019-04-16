@@ -5,12 +5,10 @@
    text-align: center;
 }
 
-.partners--title {
+.partners__title {
+   margin-top: 16px;
    margin-bottom: 20px;
-   font-size: 18px;
-   font-weight: 700;
    line-height: 38px;
-   text-transform: uppercase;
 }
 
 .partners__list {
@@ -26,7 +24,7 @@
    margin-bottom: 50px;
    justify-content: center;
    align-items: center;
-   opacity: 0.5;
+   filter: grayscale(100%);
    transition: 0.3s;
 }
 
@@ -35,7 +33,7 @@
 }
 
 .partners__item:hover {
-   opacity: 1;
+   filter: grayscale(0%);
 }
 
 

@@ -1,4 +1,4 @@
-.reviews--title {
+.title--reviews {
    margin-bottom: 49px;
    margin-top: 13px;
 }
@@ -6,3 +6,4 @@
 .content-list--reviews .content-list__pic {
    background-image: url('../../images/background_img.png');
 }
+
